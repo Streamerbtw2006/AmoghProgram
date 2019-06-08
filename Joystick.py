@@ -9,11 +9,11 @@ logging.basicConfig(level=logging.DEBUG,
 log = logging.getLogger(__name__)
 
 tp = MoveTank(OUTPUT_A, OUTPUT_D)
-button = Button()
+butt = Button()
 
 
 try:
-    while not button.any():  
+    while not butt.any():  
         time.sleep(0.5)
         press = input("w to go forward, s to go backward, a to go right, d to go left, x to stop, t to end program")
         if press == "w":
